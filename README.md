@@ -13,7 +13,7 @@ To do this follow the steps outlined [here](https://docs.microsoft.com/en-us/azu
 
 To deploy this function from this GitHub repo follow [these steps](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python)
 
-Once this is done you should add four params to your function settings configuration to pass Global paramas as Environment variables.
+Once you have an Azure Function deployed with your own settings, you should add four params to your function settings configuration to pass Global paramas as Environment variables.
 These params should be added individually in your Azure Settings Configuration as Keys and Values:
 ```
     "User": "MyUserName",
