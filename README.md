@@ -1,5 +1,5 @@
 # github-api-challenge
-__Mentat Submission For Github API Challenge__
+## __Mentat Submission For Github API Challenge__
 
 This is a Python based webhook hosted with [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) with [GitHub API v4](https://docs.github.com/en/rest). The function triggers on a Post  when a GitHub repo is created, and this will trigger the Python function to add branch protection to the `'main'` branch.
 
