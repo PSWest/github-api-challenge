@@ -164,6 +164,9 @@ async def main(req: func.HttpRequest) -> func.HttpResponse:
         repo_path = req_body['repository']['full_name']
         response = check_and_set_branch_protection(repo_path)
         logging.info(response)
+    else:
+        response = "Event Was Triggered By Non Repo Create Event, Will Not Protect And Notify."
+        logging.info(response)
     return func.HttpResponse(
         body=response,
         status_code=200
