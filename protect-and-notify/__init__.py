@@ -159,11 +159,11 @@ async def main(req: func.HttpRequest) -> func.HttpResponse:
         req_body = req.get_json()
     except ValueError:
         pass
-    
+
     if req_body['action'] == 'created':
         repo_path = req_body['repository']['full_name']
         response = check_and_set_branch_protection(repo_path)
-
+        logging.info(response)
     return func.HttpResponse(
         body=response,
         status_code=200
