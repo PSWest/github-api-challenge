@@ -10,6 +10,7 @@ Learn how retreive a GitHub Personal Auth Token click [here](https://docs.github
 ### Setup An Azure Serverless Function
 Lets setup an Azure function:
 To do this follow the steps outlined [here](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python)
+To deploy this function from this GitHub repo follow [these steps](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python)
 
 Once this is done you should add four params to your function settings configuration to pass Global paramas as Environment variables.
 These params should be added individually in your Azure Settings Configuration as Keys and Values:
